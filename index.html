@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BOBA SQUARE · Bubble Tea in Bhopal</title>
+  <meta name="description" content="BOBA SQUARE – Bhopal's bubble tea spot. Creamy boba shakes, fizzy soda boba and signature Oreo, KitKat & Biscoff specials. 'Cause one is not enough.">
+  <meta name="theme-color" content="#6a1b9a">
+  <meta property="og:title" content="BOBA SQUARE · Bubble Tea in Bhopal">
+  <meta property="og:description" content="Shakes, sodas & signature specials loaded with chewy pearls or popping boba. 'Cause one is not enough.">
+  <meta property="og:image" content="assets/logo.png">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- floating bubble layer -->
+  <div class="bubble-field" aria-hidden="true"></div>
+
+  <header class="nav" id="top">
+    <a href="#top" class="nav__brand" aria-label="BOBA SQUARE home">
+      <img src="assets/logo.png" alt="" width="48" height="40">
+      <span>BOBA SQUARE</span>
+    </a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links" id="nav-links">
+      <a href="#menu">Menu</a>
+      <a href="#build">Build a Cup</a>
+      <a href="#quiz">Boba Match</a>
+      <a href="#boba101">Boba 101</a>
+      <a href="#visit" class="btn btn--pink btn--sm">Visit Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__wave hero__wave--top" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="eyebrow">Bhopal · Madhya Pradesh</p>
+        <img class="hero__logo" src="assets/logo.png" alt="BOBA SQUARE logo – Bo Ba squared, 'Cause one is not enough" width="319" height="269">
+        <h1 class="hero__title">Sip. Chew. <span>Pop.</span> Repeat.</h1>
+        <p class="hero__tag">'Cause one is not enough</p>
+        <p class="hero__lead">Creamy boba shakes, fizzy soda boba and over-the-top signature specials — every cup loaded with chewy pearls or bursting popping boba, made fresh and sealed right in front of you.</p>
+        <div class="hero__ctas">
+          <a href="#visit" class="btn btn--yellow">📍 Find the Outlet</a>
+          <a href="#build" class="btn btn--ghost">Build Your Cup →</a>
+        </div>
+        <ul class="hero__stats">
+          <li><strong data-count="18">0</strong><span>drinks on the menu</span></li>
+          <li><strong data-count="6">0</strong><span>popping boba flavours</span></li>
+          <li><strong>∞</strong><span>reasons to come back</span></li>
+        </ul>
+      </div>
+      <div class="hero__cups" aria-hidden="true">
+        <div class="mini-cup" style="--liquid:#f7a8c4"></div>
+        <div class="mini-cup" style="--liquid:#c79a6b"></div>
+        <div class="mini-cup" style="--liquid:#8fd3f4"></div>
+        <div class="mini-cup" style="--liquid:#fff3d6"></div>
+      </div>
+      <div class="hero__wave hero__wave--bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Oreo Boba ✦ KitKat Boba ✦ Biscoff Boba ✦ Ras Malai ✦ Blue Lagoon ✦ Watermelon Splash ✦ Mango ✦ Green Lime Mojito ✦ Butterscotch ✦ Red Velvet ✦ </span>
+        <span>Oreo Boba ✦ KitKat Boba ✦ Biscoff Boba ✦ Ras Malai ✦ Blue Lagoon ✦ Watermelon Splash ✦ Mango ✦ Green Lime Mojito ✦ Butterscotch ✦ Red Velvet ✦ </span>
+      </div>
+    </div>
+
+    <!-- ============ MENU ============ -->
+    <section class="section" id="menu">
+      <div class="section__head">
+        <p class="eyebrow eyebrow--pink">The Menu</p>
+        <h2>Pick your square</h2>
+        <p>Four ways to boba. Tap a drink to see what it pairs best with — then go build it.</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Menu categories">
+        <button role="tab" class="tab is-active" aria-selected="true" data-cat="milk">🥛 Boba Shakes</button>
+        <button role="tab" class="tab" aria-selected="false" data-cat="soda">🫧 Soda Boba</button>
+        <button role="tab" class="tab" aria-selected="false" data-cat="special">⭐ Signature Specials</button>
+        <button role="tab" class="tab" aria-selected="false" data-cat="premix">🍵 Premix Picks</button>
+      </div>
+      <p class="tabs__blurb" id="cat-blurb"></p>
+      <div class="menu-grid" id="menu-grid" role="tabpanel"></div>
+      <p class="fine">Prices &amp; daily availability at the counter. Premix picks may vary by day.</p>
+    </section>
+
+    <!-- ============ BUILDER ============ -->
+    <section class="section section--purple" id="build">
+      <div class="section__head section__head--light">
+        <p class="eyebrow">Interactive</p>
+        <h2>Build your cup</h2>
+        <p>Mix it your way, watch it come to life, then show your order at the counter.</p>
+      </div>
+
+      <div class="builder">
+        <div class="builder__stage">
+          <svg class="cup" id="cup" viewBox="0 0 240 340" role="img" aria-labelledby="cup-title">
+            <title id="cup-title">Your custom BOBA SQUARE cup</title>
+            <defs>
+              <clipPath id="cup-clip">
+                <path d="M40 70 L200 70 L182 318 Q181 330 168 330 L72 330 Q59 330 58 318 Z"/>
+              </clipPath>
+              <linearGradient id="gloss" x1="0" x2="1">
+                <stop offset="0" stop-color="#fff" stop-opacity=".45"/>
+                <stop offset=".25" stop-color="#fff" stop-opacity="0"/>
+                <stop offset=".8" stop-color="#fff" stop-opacity="0"/>
+                <stop offset="1" stop-color="#fff" stop-opacity=".25"/>
+              </linearGradient>
+            </defs>
+            <!-- straw -->
+            <rect id="straw" x="128" y="6" width="16" height="250" rx="8" fill="#ff4f8b" transform="rotate(14 136 130)"/>
+            <g clip-path="url(#cup-clip)">
+              <rect x="0" y="0" width="240" height="340" fill="#fff" opacity=".18"/>
+              <rect id="liquid" x="0" y="96" width="240" height="250" fill="#f7a8c4"/>
+              <path id="liquid-top" d="M0 96 Q60 86 120 96 T240 96 V110 H0 Z" fill="#fff" opacity=".25"/>
+              <g id="fizz"></g>
+              <g id="pearls"></g>
+              <rect id="topping" x="96" y="98" width="48" height="14" rx="3" fill="transparent"/>
+            </g>
+            <!-- seal film + cup outline -->
+            <rect x="30" y="56" width="180" height="16" rx="8" fill="#ffd84d" stroke="#5b0f86" stroke-width="4"/>
+            <path d="M40 70 L200 70 L182 318 Q181 330 168 330 L72 330 Q59 330 58 318 Z" fill="url(#gloss)" stroke="#5b0f86" stroke-width="5" stroke-linejoin="round"/>
+            <text x="120" y="215" text-anchor="middle" class="cup__brand">Bo²Ba</text>
+          </svg>
+          <div class="builder__shadow"></div>
+          <button class="btn btn--yellow btn--sm" id="shuffle">🎲 Surprise me</button>
+        </div>
+
+        <form class="builder__panel" id="builder-form" onsubmit="return false">
+          <fieldset>
+            <legend><span>1</span> Choose a style</legend>
+            <div class="chips" id="b-cat"></div>
+          </fieldset>
+          <fieldset>
+            <legend><span>2</span> Choose a flavour</legend>
+            <div class="chips" id="b-flavour"></div>
+          </fieldset>
+          <fieldset id="b-boba-wrap">
+            <legend><span>3</span> Choose your boba</legend>
+            <div class="chips" id="b-boba"></div>
+            <div class="chips chips--sub" id="b-pop"></div>
+            <p class="hint" id="b-hint"></p>
+          </fieldset>
+          <fieldset id="b-sweet-wrap">
+            <legend><span>4</span> Sweetness</legend>
+            <div class="chips" id="b-sweet">
+              <button type="button" class="chip is-active" data-v="Regular">Regular</button>
+              <button type="button" class="chip" data-v="Extra sweet">Extra sweet</button>
+            </div>
+          </fieldset>
+
+          <div class="ticket" id="ticket" aria-live="polite">
+            <div class="ticket__head">
+              <img src="assets/logo.png" alt="" width="40" height="34">
+              <div><small>Order card</small><strong id="t-name">—</strong></div>
+            </div>
+            <ul id="t-lines"></ul>
+            <div class="ticket__actions">
+              <button type="button" class="btn btn--pink btn--sm" id="save-order">💜 Save my order</button>
+              <button type="button" class="btn btn--ghost-dark btn--sm" id="share-order">Share</button>
+            </div>
+            <p class="hint hint--dark" id="saved-note"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ QUIZ ============ -->
+    <section class="section" id="quiz">
+      <div class="section__head">
+        <p class="eyebrow eyebrow--pink">Boba Match</p>
+        <h2>Which boba are you?</h2>
+        <p>Three quick taps. One perfect cup.</p>
+      </div>
+      <div class="quiz" id="quiz-box">
+        <div class="quiz__progress"><span id="quiz-bar"></span></div>
+        <div id="quiz-body"></div>
+      </div>
+    </section>
+
+    <!-- ============ BOBA 101 ============ -->
+    <section class="section section--lilac" id="boba101">
+      <div class="section__head">
+        <p class="eyebrow eyebrow--pink">Boba 101</p>
+        <h2>Chew or pop?</h2>
+        <p>New to bubble tea? Here's the only thing you need to know.</p>
+      </div>
+      <div class="flip-row">
+        <button class="flip" aria-label="Chewing boba – tap to flip">
+          <div class="flip__inner">
+            <div class="flip__face flip__face--front">
+              <div class="pearl-stack pearl-stack--chew"><i></i><i></i><i></i><i></i><i></i></div>
+              <h3>Chewing Boba</h3>
+              <p>Tap to flip</p>
+            </div>
+            <div class="flip__face flip__face--back">
+              <h3>Soft. Chewy. Classic.</h3>
+              <p>Tapioca pearls cooked fresh at the counter and finished in brown sugar syrup for that deep caramel glow. The OG — made for our creamy shakes.</p>
+              <span class="pill">Best with shakes &amp; specials</span>
+            </div>
+          </div>
+        </button>
+        <button class="flip" aria-label="Popping boba – tap to flip">
+          <div class="flip__inner">
+            <div class="flip__face flip__face--front">
+              <div class="pearl-stack pearl-stack--pop"><i></i><i></i><i></i><i></i><i></i></div>
+              <h3>Popping Boba</h3>
+              <p>Tap to flip</p>
+            </div>
+            <div class="flip__face flip__face--back">
+              <h3>Bite. Burst. Wow.</h3>
+              <p>Juicy little spheres with a thin skin that bursts with flavour — chocolate, coffee, mango, strawberry, blueberry or lemon.</p>
+              <span class="pill">Star of every soda boba</span>
+            </div>
+          </div>
+        </button>
+      </div>
+
+      <div class="promise">
+        <h3>The BOBA SQUARE promise</h3>
+        <div class="promise__grid">
+          <div><span>⚖️</span><h4>Measured, never guessed</h4><p>Every cup is built to the same recipe, so your favourite tastes exactly the same every single visit.</p></div>
+          <div><span>🔥</span><h4>Pearls made fresh</h4><p>Chewing boba is cooked at the counter every day — never sitting around.</p></div>
+          <div><span>🫧</span><h4>Fizz protected</h4><p>Soda boba is poured slow and handed over fast, so it reaches you sparkling.</p></div>
+          <div><span>🔒</span><h4>Sealed to go</h4><p>Every drink is sealed spill-proof with a fat boba straw. Walk, ride, sip.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="section section--purple visit" id="visit">
+      <div class="section__head section__head--light">
+        <p class="eyebrow">Come say hi</p>
+        <h2>Visit the outlet</h2>
+        <p>One sip and you'll see why one is never enough.</p>
+      </div>
+      <div class="visit__grid">
+        <div class="visit__card">
+          <div class="open-badge" id="open-badge"><i></i><span>Checking hours…</span></div>
+          <h3>BOBA SQUARE</h3>
+          <p class="visit__addr" id="v-address"></p>
+          <dl class="visit__hours" id="v-hours"></dl>
+          <div class="visit__actions">
+            <a class="btn btn--yellow" id="v-directions" target="_blank" rel="noopener">📍 Get Directions</a>
+            <a class="btn btn--ghost" id="v-call">📞 Call</a>
+            <a class="btn btn--ghost" id="v-insta" target="_blank" rel="noopener">📸 Instagram</a>
+            <a class="btn btn--ghost" id="v-whatsapp" target="_blank" rel="noopener">💬 Tell a friend</a>
+          </div>
+          <div class="visit__saved" id="visit-saved" hidden>
+            <small>Your saved order</small>
+            <strong id="visit-saved-name"></strong>
+            <span>Show this at the counter 💜</span>
+          </div>
+        </div>
+        <div class="visit__map">
+          <iframe id="v-map" title="Map to BOBA SQUARE, Bhopal" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="assets/logo.png" alt="BOBA SQUARE" width="110" height="93">
+    <p class="footer__tag">'Cause one is not enough</p>
+    <p>BOBA SQUARE · Bhopal, Madhya Pradesh</p>
+    <p class="fine">© <span id="year"></span> BOBA SQUARE. All rights reserved.</p>
+  </footer>
+
+  <a href="#visit" class="fab" aria-label="Visit the outlet">📍 Visit Us</a>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
